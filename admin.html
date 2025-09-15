@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bookstore — Admin</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Админка — управление книгами</h1>
+
+    <div id="loginSection" class="card">
+      <div class="form-row">
+        <label>Пароль администратора</label>
+        <input id="adminPass" type="password" placeholder="Введите пароль"/>
+      </div>
+      <button id="loginBtn" class="btn btn-primary">Войти</button>
+    </div>
+
+    <div id="adminArea" style="display:none;">
+      <div class="admin-note">Автоматические напоминания проверяются каждые 10 секунд и выводятся здесь.</div>
+      <div id="alerts"></div>
+
+      <h3>Добавить / редактировать книгу</h3>
+      <div id="formCard" class="card">
+        <div class="form-row">
+          <input id="bookId" type="hidden" />
+          <input id="title" placeholder="Название" />
+          <input id="author" placeholder="Автор" />
+          <input id="category" placeholder="Категория" />
+          <input id="year" type="number" placeholder="Год" />
+          <input id="price" type="number" placeholder="Цена" />
+          <div class="input-inline">
+            <label>
+              <input id="available" type="checkbox" checked/> Доступна
+            </label>
+            <select id="status">
+              <option value="available">available</option>
+              <option value="rented">rented</option>
+              <option value="unavailable">unavailable</option>
+            </select>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;">
+          <button id="saveBtn" class="btn btn-primary">Сохранить</button>
+          <button id="newBtn" class="btn btn-ghost">Новая</button>
+        </div>
+      </div>
+
+      <h3>Список книг</h3>
+      <div id="bookList" class="grid"></div>
+    </div>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
