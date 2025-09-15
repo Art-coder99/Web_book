@@ -1,0 +1,43 @@
+
+---
+
+# 2) data/books_sample.json (seed)
+```json
+[
+  {
+    "id": "b1",
+    "title": "Мастер и Маргарита",
+    "author": "Михаил Булгаков",
+    "category": "Классика",
+    "year": 1966,
+    "price": 499,
+    "status": "available",
+    "available": true,
+    "cover": "",
+    "rents": []
+  },
+  {
+    "id": "b2",
+    "title": "451 градус по Фаренгейту",
+    "author": "Рэй Брэдбери",
+    "category": "Антиутопия",
+    "year": 1953,
+    "price": 350,
+    "status": "available",
+    "available": true,
+    "cover": "",
+    "rents": []
+  },
+  {
+    "id": "b3",
+    "title": "Атлант расправил плечи",
+    "author": "Айн Рэнд",
+    "category": "Философия/Роман",
+    "year": 1957,
+    "price": 700,
+    "status": "available",
+    "available": true,
+    "cover": "",
+    "rents": []
+  }
+]
