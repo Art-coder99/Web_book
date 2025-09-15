@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bookstore — User</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Книжный магазин — каталог</h1>
+      <div class="controls">
+        <select id="filterCategory"><option value="">Все категории</option></select>
+        <select id="filterAuthor"><option value="">Все авторы</option></select>
+        <select id="filterYear"><option value="">Все годы</option></select>
+        <select id="sortBy">
+          <option value="">Без сортировки</option>
+          <option value="price-asc">Цена ↑</option>
+          <option value="price-desc">Цена ↓</option>
+          <option value="year-asc">Год ↑</option>
+          <option value="year-desc">Год ↓</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="catalog" class="grid"></div>
+
+    <div class="footer">
+      <small>Открой <a href="admin.html">admin</a> для управления (пароль: <b>admin123</b>)</small>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
